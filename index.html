@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Data insert to Database</title>
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+input[type=number], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+    .registerbtn:hover {
+  opacity: 1;
+}
+
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+
+  </style>
+</head>
+<body>
+	
+<h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+
+      <form action="insert.php" method="post">
+
+         <div class="input-container">
+      <label><b>Username :</b></label><br/>
+        <i class="fa fa-user icon"></i>
+      <input type="text" name="username" placeholder="Enter username.."><br><br>
+      </div>
+
+       <div class="input-container">
+      <label><b>Email :</b></label><br/>
+       <i class="fa fa-envelope icon"></i>
+      <input type="text" name="email" placeholder="Enter Email.." required><br/><br>
+      </div>
+
+       <div class="input-container">
+      <label><b>Phone Number:</b></label><br/>
+       <i class="fa fa-phone icon"></i>
+      <input type="number" name="phone" placeholder="Enter Number.." required><br/><br>
+      </div>
+
+       <div class="input-container">
+      <label><b>Address :</b></label><br/>
+      <i class="fa fa-home icon"></i> 
+      <input type="text" name="address" placeholder="Enter Address.." required><br/><br>
+     </div>
+
+       <div class="input-container">
+      <label><b>Company: </b></label><br/>
+       <i class="fa fa-plane icon"></i>
+      <input type="text" name="company" placeholder="Enter Company Name" required><br/><br>
+      </div>
+
+       <div class="input-container">
+      <label ><b>Income :</b></label><br/>
+       <i class="fa fa-credit-card icon"></i>
+      <input type="number" name="income" placeholder="Per Month Salary" required><br/><br/>
+      </div>
+
+       <div class="input-container">
+      <label><b>Designation :</b></label><br/>
+      <i class="fa fa-balance-scale icon"></i> 
+      <input type="text" name="designation" placeholder="Enter Position.." required><br><br>
+      </div>
+
+      <br/>
+       <input type="submit" class="registerbtn" value="Submit">
+   </form>
+
+
+<a href="http://localhost/easy/test.php"><h3>All Information</h3></a>
+
+
+
+</body>
+</html>
